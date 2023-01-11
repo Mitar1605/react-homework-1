@@ -4,19 +4,30 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <div className="header__container">
+          <div className="header__logo-div">
+            <img src={require("./icons/fishing.png")} alt="hook"/>
+            <span>
+                Hook
+              </span>
+          </div>
+          <div className="header_nav">
+            <nav>
+              <ul className="header_ul">
+                <li className="header_ul-li"><a href="#" className="header__ul-li-a">Home</a></li>
+                <li className="header_ul-li"><a href="#" className="header__ul-li-a">Features</a></li>
+                <li className="header_ul-li"><a href="#" className="header__ul-li-a">Pricing</a></li>
+                <li className="header_ul-li"><a href="#" className="header__ul-li-a">Blog</a></li>
+                <li className="header_ul-li"><a href="#" className="header__ul-li-a">
+                          <span>
+                            Register
+                          </span>
+                </a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </header>
     </div>
   );
